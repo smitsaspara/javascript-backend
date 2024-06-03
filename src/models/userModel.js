@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
         type: String,
     },
     watchHistory: {
-        type : Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : "Video"
     },
     password: {
@@ -86,4 +86,4 @@ userSchema.methods.generateRefreshToken = async function(){
     )
 }
 
-export const User = mongoose.Model("User", userSchema);
+export const User = mongoose.model("User", userSchema);
