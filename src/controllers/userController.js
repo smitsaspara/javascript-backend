@@ -318,5 +318,7 @@ export {
     refreshAccessToken,
     changePassword,
     getUser,
-    updateUserDetails
+    updateUserDetails,
+    updateAvatar,
+    updateCoverImage
 };
